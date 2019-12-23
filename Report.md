@@ -37,16 +37,16 @@ Log.w("showlog","logwarning")
 ## SNACKBAR และ TOST
 
 คำสั่งแสดง Snackbar
-
+เป็นตัวเเสดงข้อความ ในขณะสั้น ๆ  
 ```kotlin
 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 .setAction("Action", null).show()
 ```
 
 คำสั่งแสดง Tost
-
+เป็นตัวเเสดงข้อความ ในขณะสั้น ๆ คล้าย ๆ กับ Snackbas
 ```kotlin
-//Add your code here
+Toast.makeText(this, "Show Toast", Toast.LENGTH_LONG).show()
 ```
 
 ## Android LiveCycle Activity
