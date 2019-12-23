@@ -7,31 +7,31 @@
 Debug log
 
 ```kotlin
-//Add your code here
+Log.d("showlog","logdebug")
 ```
 
 Error log
 
 ```kotlin
-//Add your code here
+Log.e("showlog","logerror")
 ```
 
 Info log
 
 ```kotlin
-//Add your code here
+Log.i("showlog","loginfo")
 ```
 
 Verbose log
 
 ```kotlin
-//Add your code here
+Log.v("showlog","logvervose")
 ```
 
 Warning log
 
 ```kotlin
-//Add your code here
+Log.w("showlog","logwarning")
 ```
 
 ## SNACKBAR และ TOST
@@ -39,7 +39,8 @@ Warning log
 คำสั่งแสดง Snackbar
 
 ```kotlin
-//Add your code here
+Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+.setAction("Action", null).show()
 ```
 
 คำสั่งแสดง Tost
