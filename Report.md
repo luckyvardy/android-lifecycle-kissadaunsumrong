@@ -56,43 +56,65 @@ Toast.makeText(this, "Show Toast", Toast.LENGTH_LONG).show()
 1. onCreate() ->
 
 ```kotlin
-//Add your code here
+override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        setSupportActionBar(toolbar)
+}
 ```
 
 2. onStart() ->
 
 ```kotlin
-//Add your code here
+ override fun onStart(){
+        super.onStart()
+        Log.i("ShowLog","OnStart")
+
+    }
 ```
 
 3. onResume() ->
 
 ```kotlin
-//Add your code here
+override fun onResume(){
+        super.onResume()
+        Log.i("ShowLog","resume")
 ```
 
 4. onPause() ->
 
 ```kotlin
-//Add your code here
+  override fun  onPause(){
+        super. onPause()
+        Log.i("ShowLog","onPause")
+    }
 ```
 
 5. onStop() ->
 
 ```kotlin
-//Add your code here
+  override fun  onStop(){
+        super. onStop()
+        Log.i("ShowLog","onStop")
+    }
 ```
 
 6. onDestroy() ->
 
 ```kotlin
-//Add your code here
+ override fun  onDestroy(){
+        super. onDestroy()
+        Log.i("ShowLog","onDestroy")
+    }
 ```
 
 7. onRestart() ->
 
 ```kotlin
-//Add your code here
+override fun  onRestart(){
+        super. onRestart()
+        Log.i("ShowLog","onRestart")
+    }
 ```
 
 ## Start new Activity
@@ -100,11 +122,25 @@ Toast.makeText(this, "Show Toast", Toast.LENGTH_LONG).show()
 คำสั่งสำหรับเปิด activity ใหม่
 
 ```kotlin
-//Add your code here
+bottonwellcome.setOnClickListener{View ->
+            Snackbar.make( View, "Pracharat", Snackbar.LENGTH_LONG)
+                .setAction("ac", null).show()
+            var wc = Intent(this,WelcomeActivity::class.java)
+            startActivity(wc)
+        }
 ```
 
 คำสั่งสำหรับเปิด activity ใหม่ ผ่านเมนู setting
 
 ```kotlin
-//Add your code here
+   override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_settings ->{
+                var sc = Intent(this,SettingActivity::class.java)
+                startActivity(sc)
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 ```
