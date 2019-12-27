@@ -50,14 +50,8 @@ Toast.makeText(this, "Show Toast", Toast.LENGTH_LONG).show()
 ```
 
 ## Android LiveCycle Activity
-
-<<<<<<< HEAD
-จงอธิบายการทำงานของเมธอทต่อไปนี้ ว่าเกิดขึ้นเมื่อใดของโปรแกรม พร้อมแสดงตัวอย่างโค้ดการทำงานของเมธอท (กำหนดให้แสดง log message เมื่อมีการทำงานของเมธอท)
-
-=======
 จงอธิบาการทำงานของเมธอทต่อไปนี้ ว่าเกิดขึ้นเมื่อใดของโปรแกรม พร้อมแสดงตัวอย่างโค้ดการทำงานของเมธอท (กำหนดให้แสดง log message เมื่อมีการทำงานของเมธอท)
-      
->>>>>>> b401e04c977a8cac1e0728cc8e4ba7d7a937cc03
+
 1. onCreate() ->
         Android จะเรียก onCreate() เมื่อ Activity Start ในหนึ่งช่วงเวลาของ Application นั้น อาจมีการ Create และ Destroy Activity อยู่เรื่อยๆ ยกตัวอย่างเช่น เมื่อ User ทำการ Rotate Screen จะส่งผลให้ Activity ถูก Destroy และ Instance ใหม่ของ Activity เดิมก็จะถูก Create อีกครั้ง
 ```kotlin
